@@ -6,7 +6,7 @@ window.geometry("500x500")
 def raiseframe(frame):
     frame.tkraise()
     
-def getEntry():
+def getfcalc():
     pass
 
 #creation of all frames
@@ -27,6 +27,7 @@ fcalcTitle = Label(fcalc, text="Normal Calculations",font=("Arial",25), backgrou
 fcalcTitle.place(x=105,y=20)
 fcalcBack = Button(fcalc, text="<--Back", command=lambda:raiseframe(startframe),font=("Arial",10))
 fcalcBack.place(x=10,y=10)
+fcalcSubmit = Button(fcalc, text="Submit", command=getfcalc())
 ##actual calculator
 fcalcEntry = Entry(fcalc, text="Enter Math Here")
 fcalcEntry.place(x=115,y=100,width=300,height=200) # not finished here. carry on from here
