@@ -1,4 +1,6 @@
 from tkinter import *
+from maths.basicCalculations import getfcalc
+#i know get fcalc is unsecure code. you dont have to tell me, but it works :/
 
 window = Tk()
 window.geometry("500x500")
@@ -6,13 +8,8 @@ window.geometry("500x500")
 def raiseframe(frame):
     frame.tkraise()
     
-def getfcalc():
-    math = fcalcEntry.get()
-    print(math)
-    return eval(math)
 
-def eval():
-    pass
+
 #creation of all frames
 
 fcalc = Frame(window, background="light blue")
